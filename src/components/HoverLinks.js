@@ -9,7 +9,7 @@ import Blogs from "../../public/blogweb.webp"
 export default function HoverLinks() {
   return (
     <section className='min-h-screen overflow-x-hidden bg-[#101317] p-4 md:p-8'>
-      <div className='z-0 bg-[#aa3c4f] w-1/2 h-60 sm:h-1/3 overflow-hidden absolute -bottom-9 items-center justify-center left-1/2 transform -translate-x-1/2   blur-[7rem] sm:blur-[13rem]  rounded-full'/>
+      <div className='z-0 bg-[#aa3c4f] w-1/2 h-60 sm:h-1/4 overflow-hidden absolute -bottom-9 items-center justify-center left-1/2 transform -translate-x-1/2   blur-[7rem] sm:blur-[13rem]  rounded-full'/>
       <div className="mx-auto max-w-7xl ">
         <Link
           heading="Portfolio"
