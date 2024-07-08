@@ -8,8 +8,9 @@ import Blogs from "../../public/blogweb.webp"
 
 export default function HoverLinks() {
   return (
-    <section className='min-h-screen overflow-x-hidden bg-neutral-950 p-4 md:p-8'>
-      <div className="mx-auto max-w-9xl ">
+    <section className='min-h-screen overflow-x-hidden bg-[#101317] p-4 md:p-8'>
+      <div className='z-0 bg-[#aa3c4f] w-1/2 h-60 sm:h-1/3 overflow-hidden absolute -bottom-9 items-center justify-center left-1/2 transform -translate-x-1/2   blur-[7rem] sm:blur-[13rem]  rounded-full'/>
+      <div className="mx-auto max-w-7xl ">
         <Link
           heading="Portfolio"
           subheading="Portfolio Website made using  NextJS"
@@ -32,6 +33,12 @@ export default function HoverLinks() {
           heading="Education"
           subheading="Website made using  NextJS"
           imgSrc="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D    "
+          href="#"
+        />
+        <Link
+          heading="Skills"
+          subheading="Website made using  NextJS"
+          imgSrc="https://images.unsplash.com/photo-1687603921109-46401b201195?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           href="#"
         />
         
@@ -83,7 +90,7 @@ const Link = ({ heading, subheading, imgSrc, href }) => {
           delayChildren: 0.25,
           staggerChildren:0.08
       }}
-        className='duration-800 relative z-10 block text-4xl font-bold text-neutral-500 transition-colors  md:text-6xl group-hover:text-neutral-50'>
+        className='duration-800 relative z-10 block text-4xl font-bold text-neutral-300 transition-colors  md:text-6xl group-hover:text-neutral-50'>
         {heading.split("").map((l, i) => {
           return <motion.span variants={{
         initial: {
@@ -100,7 +107,7 @@ const Link = ({ heading, subheading, imgSrc, href }) => {
             className='inline-block' key={i}>{l}</motion.span>
         })}
       </motion.span>
-      <span className='relative z-10 mt-2 block text-neutral-500 transition-colors duration-500 group-hover:text-neutral-100'>{subheading}</span>
+      <span className='relative z-10 mt-2 block text-neutral-400 transition-colors duration-500 group-hover:text-neutral-100'>{subheading}</span>
     </div>
     <motion.img
     variants={{
